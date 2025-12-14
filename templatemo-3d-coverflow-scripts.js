@@ -41,35 +41,35 @@ https://templatemo.com/tm-595-3d-coverflow
             }
         });
 
-        // Image data with titles and descriptions
+        // Image data with titles and descriptions (for food delivery)
         const imageData = [
             {
-                title: "Mountain Landscape",
-                description: "Majestic peaks covered in snow during golden hour"
+                title: "برغر لحم مشوي",
+                description: "برغر طري مع جبن ذائب وخضار طازجة يصل إلى بابك ساخنًا"
             },
             {
-                title: "Forest Path",
-                description: "A winding trail through ancient woodland"
+                title: "بيتزا مارجريتا",
+                description: "بيتزا إيطالية تقليدية بجبن الموزاريلا والريحان الطازج"
             },
             {
-                title: "Lake Reflection",
-                description: "Serene waters mirroring the surrounding landscape"
+                title: "سلطة صحية",
+                description: "خيار مثالي لمحبي الأكل الصحي مع خضار متنوعة وصوص خفيف"
             },
             {
-                title: "Ocean Sunset",
-                description: "Golden hour over endless ocean waves"
+                title: "وجبة شرقية متكاملة",
+                description: "أرز، كباب، سلطة ومقبلات في طبق واحد شهي"
             },
             {
-                title: "Desert Dunes",
-                description: "Rolling sand dunes under vast blue skies"
+                title: "مشاوي متنوعة",
+                description: "تشكيلة من المشاوي على الجمر مع أطباق جانبية"
             },
             {
-                title: "Starry Night",
-                description: "Countless stars illuminating the dark sky"
+                title: "حلويات مشكلة",
+                description: "حلويات شرقية وغربية تناسب نهاية أي وجبة"
             },
             {
-                title: "Waterfall",
-                description: "Cascading water through lush green forest"
+                title: "مشروبات وعصائر",
+                description: "عصائر طازجة ومشروبات باردة مع كل طلب"
             }
         ];
 
@@ -370,10 +370,10 @@ https://templatemo.com/tm-595-3d-coverflow
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
 
-        // Form submission
+        // Form submission (demo order)
         function handleSubmit(event) {
             event.preventDefault();
-            alert('Thank you for your message! We\'ll get back to you soon.');
+            alert('تم استلام طلبك التجريبي بنجاح.\nيمكنك الآن ربط هذا النموذج مع Back-end حقيقي لحفظ الطلبات.');
             event.target.reset();
         }
 

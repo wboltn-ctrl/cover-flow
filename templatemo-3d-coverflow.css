@@ -24,6 +24,8 @@ https://templatemo.com/tm-595-3d-coverflow
             overflow-x: hidden;
             position: relative;
             background: #000;
+            direction: rtl;
+            text-align: right;
         }
 
         /* Sections */
