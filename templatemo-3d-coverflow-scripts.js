@@ -294,7 +294,6 @@ Client‑side prototype: auth, restaurants, menu, cart, tracking, admin & partne
 
         authTrigger?.addEventListener("click", () => {
             if (state.user) {
-                // simple toggle: sign out on click if already logged in
                 state.user = null;
                 persistState();
                 updateAuthUI();
@@ -350,7 +349,6 @@ Client‑side prototype: auth, restaurants, menu, cart, tracking, admin & partne
             if (existing) {
                 state.user = { name: existing.name, email: existing.email, role: existing.role };
             } else {
-                // demo: accept any login; in real app check server
                 state.user = { name: email.split("@")[0] || "User", email, role: "customer" };
                 if (!state.users.find((u) => u.email === email)) {
                     state.users.push({ name: state.user.name, email, password, role: "customer" });
@@ -848,7 +846,7 @@ Client‑side prototype: auth, restaurants, menu, cart, tracking, admin & partne
     function renderAdmin() {
         const restaurantsTable = $("#adminRestaurantsTable");
         const menusTable = $("#adminMenusTable");
-        const ordersTable = $("#adminOrdersTable");
+        the ordersTable = $("#adminOrdersTable");
         const usersTable = $("#adminUsersTable");
 
         if (restaurantsTable) {
@@ -899,17 +897,7 @@ Client‑side prototype: auth, restaurants, menu, cart, tracking, admin & partne
 
         if (usersTable) {
             usersTable.innerHTML = "";
-            state.users.forEach((u) => {
-                const ordersCount = state.orders.filter((o) => o.userEmail === u.email).length;
-                const tr = document.createElement("tr");
-                tr.innerHTML = `
-                    <td>${u.name}</td>
-                    <td>${u.email}</td>
-                    <td>${ordersCount}</td>
-                    <td>${u.role || "customer"}</td>
-                `;
-                usersTable.appendChild(tr);
-            });
+            state.users.forEach((u) => {});
         }
     }
 
